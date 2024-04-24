@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAC-MOVIES</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <header class="header">
+      <nav class="container-fluid p-4 navbar">
+        <div class="col">
+          <a href="#" class="logo">
+            <i class="fas fa-film" aria-hidden="true"></i>
+            CAC-Movies
+          </a>
+        </div>
+        <div class="col"></div> 
+        <div class="col">
+          <ul class="listaNav">
+            <li class="itemListaNav">
+              <a class="linkNav" href="#tendencias">Tendencias</a>
+            </li>
+            <li class="itemListaNav">
+              <a class="linkNav" href="#registro">Registrarse</a>
+            </li>
+            <li class="itemListaNav p-1 rounded">
+              <a class="linkNavLogeo" href="#login">Iniciar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <main id="main" class="main">
+      <section class="sectionPrincipal">
+        <h1 class="tituloPrincipal">
+          Películas y series ilimitadas 
+          <h1 class="tituloPrincipal">en un solo lugar</h1>
+        </h1>
+        <h2 class="subtituloPrincipal">
+          Disfruta donde quieras. 
+          <h2 class="subtituloPrincipal">Cancela en cualquier momento</h2>
+          
+        </h2>
+        <a class="botonRegistroPrincipal">Registrate</a>
+      </section>
+      <section class="buscador">
+        <h2 class="tituloBuscador">¿Qué estas buscando para ver?</h2>
+        <form class="buscadorPeliculas">
+          <input class="inputBuscador" type="text" placeholder="Buscar..." />
+          <input class="botonBuscador" type="submit" value="Buscar" />
+        </form>
+      </section>
+<hr>
+      <section class="containerTendencias">
+        <h3 class="tituloTendencias">Las tendencias de hoy</h3>
+
+        <div class="peliculas">
+          <div class="cardPelicula" style="width: 18rem">
+            <img
+              src="img/peli_1.jpg"
+              class="card-img-top"
+              alt="The Beekeeper"
+            />
+            <div class="tituloPelicula">
+              <h4>The Beekeeper</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img
+              src="img/peli_2.jpg"
+              class="card-img-top"
+              alt="Badland Hunters"
+            />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Badland Hunters</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_3.jpg" class="card-img-top" alt="The Marvels" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">The Marvels</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_4.jpg" class="card-img-top" alt="Wonka" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Wonka</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img
+              src="img/peli_5.jpg"
+              class="card-img-top"
+              alt="Aquaman and the lost kingdom"
+            />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Aquaman and the lost kingdom</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_6.jpg" class="card-img-top" alt="Migration" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Migration</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_7.jpg" class="card-img-top" alt="60 minutes" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">60 Minutes</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_8.jpg" class="card-img-top" alt="Wish" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Wish</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_9.jpg" class="card-img-top" alt="The Masked Saint" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">The Masked Saint</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_10.jpg" class="card-img-top" alt="Due Justice" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Due Justice</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_11.jpg" class="card-img-top" alt="Orion and the Dark" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Orion and the Dark</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_12.jpg" class="card-img-top" alt="Genghis Khan" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Genghis Khan</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_13.jpg" class="card-img-top" alt="Lift" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Lift</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_14.jpg" class="card-img-top" alt="Attack" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Attack</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_15.jpg" class="card-img-top" alt="Mutant Ghost Wargirl" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Mutant Ghost Wargirl</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_16.jpg" class="card-img-top" alt="Poor Things" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Poor Things</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_17.jpg" class="card-img-top" alt="The 5" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">The 5</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_18.jpg" class="card-img-top" alt="Trunk locked in" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Trunk locked in</h4>
+            </div>
+          </div>
+          <div class="cardPelicula" style="width: 18rem">
+            <img src="img/peli_19.jpg" class="card-img-top" alt="Anyone but you" />
+            <div class="tituloPelicula">
+              <h4 class="card-text">Anyone but you</h4>
+            </div>
+          </div>
+
+        </div>
+        <button class="btn anterior">Anterior</button>
+        <button class="btn siguiente">Siguiente</button>
+      </section>
+      <hr>
+      <section class="containerAclamadas">
+        <h3 class="tituloTendencias">Las más aclamadas</h3>
+        <div class="peliculasAclamadas">
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_1.jpg"
+              class="imgAclamada"
+              alt="The Shawnshank Redemption"
+            />
+          </div>
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_2.jpg"
+              class="imgAclamada"
+              alt="The Godfather"
+            />
+          </div>
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_3.jpg"
+              class="imgAclamada"
+              alt="The Godfather Part II"
+            />
+          </div>
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_4.jpg"
+              class="imgAclamada"
+              alt="Schindler's List"
+            />
+          </div>
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_5.jpg"
+              class="imgAclamada"
+              alt="12 Angry Men"
+            />
+          </div>
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_6.jpg"
+              class="imgAclamada"
+              alt="Spirited awaY"
+            />
+          </div>
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_7.jpg"
+              class="imgAclamada"
+              alt="The Darknight"
+            />
+          </div>
+          <div class="peliculaItem">
+            <img src="img/aclamada_8.jpg" class="imgAclamada" alt="Parasite" />
+          </div>
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_9.jpg"
+              class="imgAclamada"
+              alt="The Green Mile"
+            />
+          </div>
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_10.jpg"
+              class="imgAclamada"
+              alt="Forrest Gump"
+            />
+          </div>
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_11.jpg"
+              class="imgAclamada"
+              alt="Pulp Fiction"
+            />
+          </div>
+          <div class="peliculaItem">
+            <img
+              src="img/aclamada_12.jpg"
+              class="imgAclamada"
+              alt="The Lord of the Rings"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="navegacion gap-5">
+          <ul class="listaNav">
+              <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+              <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+              <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+              <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
+          </ul>
+      </nav>
+      <a href="#main" class="flechaArriba">
+          <img src="/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+      </a>
+  </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script>
+  </body>
+</html>

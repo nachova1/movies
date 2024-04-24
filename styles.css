@@ -1,0 +1,343 @@
+@keyframes tilt-n-move-shaking {
+  0% { transform: rotate(-5deg) translateX(-2px) translateY(-2px); }
+  50% { transform: rotate(5deg) translateX(2px) translateY(2px); }
+  100% { transform: rotate(-5deg) translateX(-2px) translateY(-2px); }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #181419;
+    
+}
+
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #9f3647;
+  }
+  
+  .navbar {
+ 
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .listaNav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    gap: 5px;
+  }
+  
+
+  
+  .linkNav {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    
+  }
+
+  .linkNavLogeo {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #181419;
+    border-radius: 5px;
+  }
+  
+  .linkNavLogeo:hover {
+    background-color: #9f3647;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+  }
+
+  .linkNav:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+  }
+
+  .logo:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+    
+  }
+
+.sectionPrincipal {
+  position: relative;
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+}
+
+.tituloPrincipal {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.subtituloPrincipal {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.botonRegistroPrincipal {
+  background-color: #9f3647;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.botonRegistroPrincipal:hover {
+  background-color: #9f3647;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.buscador {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.tituloBuscador {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.buscadorPeliculas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.inputBuscador {
+  border: 2px solid white;
+  border-radius: 25px;
+
+  color: #000000;
+  font-size: 1.2rem;
+  height: 50px;
+  margin: 20px 0px;
+  outline: none;
+  padding: 0px 20px;
+  width: 500px;
+}
+
+.botonBuscador {
+  background-color: #9f3647;
+  display: inline-block;
+  color: #fff;
+  height: 50px;
+  margin: 20px 10px;
+  padding: 0 20px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+.botonBuscador:hover {
+  background-color: #9f3647;
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+
+.containerTendencias {
+    
+    margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.tituloTendencias {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.peliculas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.cardPelicula img {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.tituloPelicula {
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.cardPelicula:hover .tituloPelicula {
+  opacity: 1;
+}
+
+.cardPelicula:hover img {
+  filter:brightness(20%) blur(2px);
+  scale: .92;
+  cursor: pointer;
+}
+
+
+
+.btn {
+  border: 1px solid white;
+  box-sizing: content-box;
+  margin: 30px;
+  padding-top: 15px;
+  background-color: #9f3647;
+  color: #fff;
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #9f3647;
+  transform: scale(0.95);
+  border-radius: 5px;
+  border: 1px solid white;
+  color: #fff;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.containerAclamadas {
+    
+    
+    text-align: center;
+   
+   margin: 20px 10px 5px 10px;
+padding: 10px 30px 10px 30px ;
+   
+}
+
+.peliculasAclamadas {
+    overflow-x: scroll;
+            overflow-y: hidden;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0px 0px 40px 0px;        
+}
+
+.peliculaItem {
+    border-radius: 25px;
+    width: 170px;
+    min-width: 170px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imgAclamada{
+    border-radius: 5%;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  height: 15vh;
+  background-color:#9f3647;
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.administradorPeliculas{
+  background-color: #181419;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.flechaArriba{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+hr {
+  border: 2px solid #ff2f52;
+    width: 70vw;
+    margin: 80px auto 80px auto;
+}
+
+/* Estilos para la barra de desplazamiento */
+/* Ancho */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra */
+}
+
+::-webkit-scrollbar-track {
+  background: #181419;; /* Color de fondo de la barra */
+}
+
+/* parte deslizante de la barra */
+::-webkit-scrollbar-thumb {
+  background: #9f3647;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
