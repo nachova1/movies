@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="registro.css" />
+
   </head>
   <body>
     <header class="header">
@@ -19,53 +26,60 @@
       <section class="sectionRegistro">
         <form method="post">
           <h2 class="tituloRegistro">Registro</h2>
-          <label>
+
+          <div class="mb-3">
+            <label for="nombre" class="form-label"></label>
             <input
               type="text"
-              placeholder="Nombre"
-              required
+              class="inputEstilizado"
+              class="form-control"
               id="nombre"
-              name="nombre"
-              class="inputEstilizado"
-          /></label>
-          <label>
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label"></label>
             <input
               type="text"
-              placeholder="Apellido"
-              required
-              id="apellido"
-              name="apellido"
               class="inputEstilizado"
-          /></label>
-          <label>
+              class="form-control"
+              id="apellido"
+              placeholder="Apellido"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label"></label>
             <input
               type="email"
-              placeholder="Email"
-              required
-              id="email"
-              name="email"
               class="inputEstilizado"
-          /></label>
-          <label>
+              class="form-control"
+              id="email"
+              placeholder="Email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="contraseña" class="form-label"></label>
             <input
               type="password"
-              placeholder="Contraseña"
-              required
-              id="contraseña"
-              name="contraseña"
               class="inputEstilizado"
-          /></label>
-          <label>
+              class="form-control"
+              placeholder="Contraseña"
+              id="contraseña"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="fechaNac" class="form-label"></label>
             <input
               type="date"
-              placeholder="Fecha de nacimiento"
-              required
-              id="fechaNac"
-              name="fechaNac"
               class="inputEstilizado"
-          /></label>
-          <label>
-            <select name="pais" id="pais">
+              class="form-control"
+              id="fechaNac"
+            />
+          </div>
+          <div class="mb-3">
+            <label>
+              <select name="pais" id="pais">
                 <option value="">País</option>
                 <option value="AR">Argentina</option>
                 <option value="BO">Bolivia</option>
@@ -77,20 +91,23 @@
                 <option value="PE">Perú</option>
                 <option value="UY">Uruguay</option>
                 <option value="VE">Venezuela</option>
-            </select>
-          </label>
-          <div class="terminos" >
-                <input class="check" type="checkbox" id="terminos">
-                <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
-            </div>
-            <div>
-                <input  class="boton" type="submit" value="Registrarse">
-            </div>
-           
-            <div > 
-                <a class="ayuda" href="#">¿Necesitas ayuda?</a>
-            </div>
+              </select>
+            </label>
+          </div>
 
+          <div class="terminos">
+            <input class="check" type="checkbox" id="terminos" />
+            <label class="textoCheck" for="terminos"
+              >Acepto términos y condiciones</label
+            >
+          </div>
+          <div>
+            <input class="boton" type="submit" value="Registrarse" />
+          </div>
+
+          <div>
+            <a class="ayuda" href="#">¿Necesitas ayuda?</a>
+          </div>
         </form>
       </section>
     </main>
@@ -98,5 +115,10 @@
       src="https://kit.fontawesome.com/ce970c0111.js"
       crossorigin="anonymous"
     ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>
