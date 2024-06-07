@@ -35,6 +35,9 @@ btnSiguiente.addEventListener("click", () => {
   }
 });
 
+
+
+
 const cargarPeliculas = async () => {
   try {
     const respuesta = await fetch(
@@ -50,7 +53,7 @@ const cargarPeliculas = async () => {
 
       datos.results.forEach((pelicula) => {
         peliculas += `
-            <div class="card pelicula" style="width: 20rem;">
+            <div class="card pelicula " >
                 <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title titulos">${pelicula.title} </h5>
